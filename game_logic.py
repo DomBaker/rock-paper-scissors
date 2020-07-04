@@ -1,20 +1,20 @@
 import random
 def game_logic(i):
-    options = ["Rock", "Paper", "Scissors"]
+    options = ["rock", "paper", "scissors"]
     result = random.choice(options)
 
     if (i == result):
-        print("Computer Chose: " + result)
+        print("Computer Chose: " + result.capitalize())
         print("Draw")
-    elif (i == "Rock") and (result == "Scissors"):
-        print("Computer Chose: " + result)
+    elif (i == "rock") and (result == "scissors"):
+        print("Computer Chose: " + result.capitalize())
         print("You Win!")
-    elif ( i == "Scissors") and (result == "Paper"):
-        print("Computer Chose: " + result)
+    elif ( i == "scissors") and (result == "paper"):
+        print("Computer Chose: " + result.capitalize())
         print("You Win!")
-    elif ( i == "Paper") and (result == "rock"):
-        print("Computer Chose: " + result)
+    elif ( i == "paper") and (result == "rock"):
+        print("Computer Chose: " + result.capitalize())
         print("You Win!")
     else:
-        print("Computer Chose: " + result)
+        print("Computer Chose: " + result.capitalize())
         print("You lose :(")
